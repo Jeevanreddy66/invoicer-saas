@@ -1,11 +1,12 @@
 "use client";
 
 import { FC } from "react";
+import { HeroBanner } from "@/components";
 
 const HomePage: FC = () => {
   return (
     <main>
-      <h2>Invoice Generator</h2>
+      <HeroBanner />
     </main>
   );
 };
