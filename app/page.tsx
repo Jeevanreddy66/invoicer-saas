@@ -1,12 +1,14 @@
 "use client";
 
 import { FC } from "react";
-import { HeroBanner, Steps } from "@/components";
+import { HeroBanner, InvoiceCTA, Steps } from "@/components";
 
 const HomePage: FC = () => {
   return (
     <main>
       <HeroBanner />
+      <Steps />
+      <InvoiceCTA />
       <Steps />
     </main>
   );

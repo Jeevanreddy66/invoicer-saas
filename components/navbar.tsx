@@ -20,7 +20,7 @@ export const Navbar: FC = () => {
       <div className="flex items-center gap-4">
         <Link href="/login">Login</Link>
         <ThemeLink
-          className=" bg-red-500 hover:bg-red-600 focus:ring-red-300"
+          className=" bg-rose-500 hover:bg-rose-600 focus:ring-rose-300"
           href="/register"
           title="Register"
         />
