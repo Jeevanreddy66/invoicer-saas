@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { HeroBanner, InvoiceCTA, Steps } from "@/components";
+import { Features, HeroBanner, InvoiceCTA, Steps } from "@/components";
 
 const HomePage: FC = () => {
   return (
@@ -10,6 +10,8 @@ const HomePage: FC = () => {
       <Steps />
       <InvoiceCTA />
       <Steps />
+
+      <Features />
     </main>
   );
 };
