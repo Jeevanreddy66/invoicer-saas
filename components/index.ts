@@ -1,6 +1,7 @@
 import { Accordion } from "./accordion";
 import { FAQ } from "./faq";
 import { Features } from "./features";
+import { Footer } from "./footer";
 import { HeroBanner } from "./heroBanner";
 import { InvoiceCTA } from "./invoiceCTA";
 import { Navbar } from "./navbar";
@@ -12,6 +13,7 @@ export {
   Accordion,
   FAQ,
   Features,
+  Footer,
   Navbar,
   InvoiceCTA,
   HeroBanner,
