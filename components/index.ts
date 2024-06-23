@@ -1,3 +1,5 @@
+import { Accordion } from "./accordion";
+import { FAQ } from "./faq";
 import { Features } from "./features";
 import { HeroBanner } from "./heroBanner";
 import { InvoiceCTA } from "./invoiceCTA";
@@ -6,4 +8,14 @@ import { Pricing } from "./pricing";
 import { Steps } from "./steps";
 import { ThemeLink } from "./themeLink";
 
-export { Features, Navbar, InvoiceCTA, HeroBanner, Pricing, Steps, ThemeLink };
+export {
+  Accordion,
+  FAQ,
+  Features,
+  Navbar,
+  InvoiceCTA,
+  HeroBanner,
+  Pricing,
+  Steps,
+  ThemeLink,
+};

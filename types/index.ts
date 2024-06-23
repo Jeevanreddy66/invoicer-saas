@@ -1,4 +1,5 @@
-import { ThemeLinkProps } from "./ThemeLinkProps.type";
+import { FAQType } from "./FAQ.type";
 import { FeatureItems } from "./FeatureItems.type";
+import { ThemeLinkProps } from "./ThemeLinkProps.type";
 
-export type { ThemeLinkProps, FeatureItems };
+export type { FAQType, FeatureItems, ThemeLinkProps };
