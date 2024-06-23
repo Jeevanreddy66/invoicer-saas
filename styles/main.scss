@@ -7,3 +7,11 @@ body {
   min-height: 100vh;
   font-family: "sans-serif";
 }
+
+.invoice-cta {
+  height: 100vh;
+  background: url("/images/invoice-template.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

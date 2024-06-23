@@ -20,7 +20,7 @@ export const HeroBanner: FC = () => {
         </p>
 
         <ThemeLink
-          className="bg-red-500 hover:bg-red-600 focus:ring-red-300"
+          className="bg-rose-500 hover:bg-rose-600 focus:ring-rose-300"
           href="/invoice/new"
           Icon={AiOutlineArrowDown}
           title="Create Your First Invoice"

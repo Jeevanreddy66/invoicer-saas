@@ -1,15 +1,15 @@
 "use client";
 
 import { FC, useEffect, useState } from "react";
-import { IconType } from "react-icons";
 import { BsChevronDown, BsChevronRight } from "react-icons/bs";
 
 export const Steps: FC = () => {
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(0);
 
   const handleResize = (): void => setWindowWidth(window.innerWidth);
 
   useEffect(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
