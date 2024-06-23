@@ -1,3 +1,4 @@
+import { faqList } from "./faqs";
 import { featureItems } from "./featureItems";
 
-export { featureItems };
+export { faqList, featureItems };
