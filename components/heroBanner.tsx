@@ -8,7 +8,7 @@ import { ThemeLink } from "./themeLink";
 
 export const HeroBanner: FC = () => {
   return (
-    <div className="mt-16 bg-violet-700 text-slate-50 grid grid-cols-1 md:grid-cols-2 items-center gap-6 px-6 py-8 md:px-16 md:py-16">
+    <div className="bg-violet-700 text-slate-50 grid grid-cols-1 md:grid-cols-2 items-center gap-6 px-6 py-8 md:px-16 md:py-16">
       <div className="flex flex-col items-center md:items-start gap-6">
         <h2 className="text-2xl md:text-3xl font-semibold">
           Free Invoice Generator - Invoice Maker
