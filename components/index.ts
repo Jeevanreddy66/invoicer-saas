@@ -4,6 +4,7 @@ import { Features } from "./features";
 import { Footer } from "./footer";
 import { HeroBanner } from "./heroBanner";
 import { InvoiceCTA } from "./invoiceCTA";
+import { InvoiceForm } from "./invoiceForm";
 import { InvoicePreview } from "./invoicePreview";
 import { Navbar } from "./navbar";
 import { Pricing } from "./pricing";
@@ -17,6 +18,7 @@ export {
   Footer,
   Navbar,
   InvoiceCTA,
+  InvoiceForm,
   InvoicePreview,
   HeroBanner,
   Pricing,
