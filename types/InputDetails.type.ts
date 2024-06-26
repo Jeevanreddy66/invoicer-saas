@@ -10,3 +10,9 @@ export type InvoiceInputDetails = {
   name: string;
   placeholder?: string;
 };
+
+export type InvoiceTableDetails = {
+  name: string;
+  placeholder: string;
+  className: string;
+};

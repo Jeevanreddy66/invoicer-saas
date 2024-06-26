@@ -6,6 +6,7 @@ import { HeroBanner } from "./heroBanner";
 import { InvoiceCTA } from "./invoiceCTA";
 import { InvoiceForm } from "./invoiceForm";
 import { InvoicePreview } from "./invoicePreview";
+import { InvoiceTable } from "./invoiceTable";
 import { Navbar } from "./navbar";
 import { Pricing } from "./pricing";
 import { Steps } from "./steps";
@@ -20,6 +21,7 @@ export {
   InvoiceCTA,
   InvoiceForm,
   InvoicePreview,
+  InvoiceTable,
   HeroBanner,
   Pricing,
   Steps,

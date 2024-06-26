@@ -1,4 +1,8 @@
-import type { InputDetails, InvoiceInputDetails } from "@/types";
+import type {
+  InputDetails,
+  InvoiceInputDetails,
+  InvoiceTableDetails,
+} from "@/types";
 
 export const companyDetails: InputDetails[] = [
   {
@@ -61,5 +65,28 @@ export const invoiceDetails: InvoiceInputDetails[] = [
     id: "invoice-due-date",
     type: "date",
     name: "invoiceDueDate",
+  },
+];
+
+export const invoiceTableDetails: InvoiceTableDetails[] = [
+  {
+    name: "quantity",
+    placeholder: "2",
+    className: "w-14",
+  },
+  {
+    name: "unitPrice",
+    placeholder: "100",
+    className: "w-24",
+  },
+  {
+    name: "tax",
+    placeholder: "40",
+    className: "w-14",
+  },
+  {
+    name: "amount",
+    placeholder: "1999",
+    className: "w-16",
   },
 ];

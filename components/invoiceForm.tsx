@@ -5,10 +5,12 @@ import { InvoiceFormProps } from "@/types";
 import { FC } from "react";
 import { AiOutlineCloudUpload } from "react-icons/ai";
 import { companyDetails, clientDetails, invoiceDetails } from "@/utils";
+import { InvoiceTable } from "./invoiceTable";
 
 export const InvoiceForm: FC<InvoiceFormProps> = ({
   invoiceData,
   handleInputChange,
+  updateTableData,
   handleFormSubmit,
 }) => {
   return (
@@ -94,9 +96,12 @@ export const InvoiceForm: FC<InvoiceFormProps> = ({
         </div>
       </div>
 
+      {/* Tabular data (Actual Invoice Data) */}
+      <InvoiceTable updateTableData={updateTableData} />
+
       <button
         type="submit"
-        className="bg-purple-700 py-2 px-6 rounded-md text-white"
+        className="bg-purple-700 py-2 px-6 mt-8 rounded-md text-white"
       >
         Create Invoice
       </button>
