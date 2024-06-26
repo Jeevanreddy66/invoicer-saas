@@ -1,6 +1,6 @@
 "use client";
 
-import type { InvoiceFormType } from "@/types";
+import type { InvoiceFormType, TableData } from "@/types";
 
 import { ChangeEvent, FC, SyntheticEvent, useState } from "react";
 import {
@@ -33,6 +33,18 @@ const CreateInvoicePage: FC = () => {
   const [invoiceData, setInvoiceData] =
     useState<InvoiceFormType>(initialInvoiceData);
 
+  const [invoiceTableData, setInvoiceTableData] = useState<TableData[]>([
+    {
+      itemDescription: "",
+      quantity: "",
+      unitPrice: "",
+      tax: "",
+      amount: "",
+    },
+  ]);
+
+  const combinedInvoiceData = { ...invoiceData, invoiceTableData };
+
   const handlePreviewBtn = (): void => setIsPreview(!isPreview);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -40,6 +52,9 @@ const CreateInvoicePage: FC = () => {
 
     setInvoiceData({ ...invoiceData, [name]: value });
   };
+
+  const updateTableData = (newTableData: TableData[]): void =>
+    setInvoiceTableData(newTableData);
 
   const handleFormSubmit = (
     e: SyntheticEvent<HTMLFormElement, SubmitEvent>
@@ -96,12 +111,13 @@ const CreateInvoicePage: FC = () => {
 
       {isPreview ? (
         // Invoice Preview
-        <InvoicePreview data={invoiceData} />
+        <InvoicePreview data={combinedInvoiceData} />
       ) : (
         // Invoice Form
         <InvoiceForm
           invoiceData={invoiceData}
           handleInputChange={handleInputChange}
+          updateTableData={updateTableData}
           handleFormSubmit={handleFormSubmit}
         />
       )}

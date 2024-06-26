@@ -5,6 +5,7 @@ import {
   companyDetails,
   clientDetails,
   invoiceDetails,
+  invoiceTableDetails,
 } from "./invoiceFormUtil";
 
 export {
@@ -14,4 +15,5 @@ export {
   featureItems,
   footerLinks,
   invoiceDetails,
+  invoiceTableDetails,
 };
